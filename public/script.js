@@ -50,15 +50,28 @@ function formatToMDY(dateStr) {
   return `${m}-${d}-${y}`;
 }
 
+// helper to normalize teacher input to UPPERCASE last-name-only requirement
+function normalizeTeacherInput(raw) {
+  if (!raw) return "";
+  // trim whitespace and collapse internal spaces
+  const s = String(raw).trim().replace(/\s+/g, " ");
+  return s.toUpperCase();
+}
+
 // Submit new assignment
 assignmentForm.addEventListener("submit", async (e) => {
   e.preventDefault();
   formMessage.textContent = "";
   const fd = new FormData(assignmentForm);
+
+  // normalize teacher to ALL UPPERCASE before sending
+  const teacherRaw = (fd.get("teacher_name") || "").trim();
+  const teacherUpper = normalizeTeacherInput(teacherRaw);
+
   const payload = {
-    assignment_title: fd.get("assignment_title").trim(),
-    teacher_name: fd.get("teacher_name").trim(),
-    class_name: fd.get("class_name").trim(),
+    assignment_title: (fd.get("assignment_title") || "").trim(),
+    teacher_name: teacherUpper,
+    class_name: (fd.get("class_name") || "").trim(),
     day_type: fd.get("day_type"),
     due_date: fd.get("due_date"),
   };
@@ -156,8 +169,10 @@ function renderRows(rows) {
 // Load using filter form fields
 function loadAssignmentsFromForm() {
   const fd = new FormData(filterForm);
+  const teacherRaw = (fd.get("teacher_name") || "").trim();
+  const teacherUpper = teacherRaw ? normalizeTeacherInput(teacherRaw) : null;
   const filters = {
-    teacher_name: (fd.get("teacher_name") || "").trim() || null,
+    teacher_name: teacherUpper,
     class_name: (fd.get("class_name") || "").trim() || null,
     day_type: (fd.get("day_type") || "").trim() || null,
   };

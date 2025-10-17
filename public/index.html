@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Stanton Planner — Assignments</title>
+  <title>Stanton Community Planner</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -16,20 +16,185 @@
         <h2>View assignments</h2>
         <form id="filterForm" class="filters">
           <label>
-            Teacher
-            <select name="teacher_name">
-              <option value="">Any</option>
-              <option value="Teacher A">Teacher A</option>
-              <option value="Teacher B">Teacher B</option>
-            </select>
+            Teacher (last name only)
+            <input name="teacher_name" placeholder="Last name only" />
           </label>
 
           <label>
             Class
             <select name="class_name">
               <option value="">Any</option>
-              <option value="Class 1">Class 1</option>
-              <option value="Class 2">Class 2</option>
+              <option>Art 1 Pre-IB</option>
+              <option>Art 2 Pre-IB</option>
+              <option>Florida Pre-IB Art 1</option>
+              <option>Florida Pre-IB Art 2</option>
+              <option>2-D Studio Art 3 Hon</option>
+              <option>Digital Art Imaging</option>
+              <option>AP Art History</option>
+
+              <option>Band 1</option>
+              <option>Band 2</option>
+              <option>Band 3</option>
+              <option>Band 4</option>
+              <option>Band 5</option>
+              <option>Band 6</option>
+              <option>Chorus 1</option>
+              <option>Chorus 2</option>
+              <option>Chorus 5</option>
+              <option>Chorus 6</option>
+
+              <option>AP Music Theory</option>
+              <option>IB Music 3 (SL & HL)</option>
+
+              <option>pre-IB Theatre 1</option>
+              <option>pre-IB Theatre 2</option>
+              <option>Pre-IB Theatre 1</option>
+              <option>Pre-IB Theatre 2</option>
+              <option>IB Theatre 1</option>
+              <option>Theatre 3</option>
+              <option>Theatre 4</option>
+              <option>IB Theatre 3 (HL)</option>
+              <option>Acting 1</option>
+              <option>Acting 2</option>
+              <option>Film 3 Hon</option>
+              <option>Film 3 Honors</option>
+              <option>IB Film Studies 1</option>
+              <option>IB Film Studies 3 (SL & HL)</option>
+
+              <option>Debate 3 Hon</option>
+              <option>Debate 4</option>
+              <option>Debate 5</option>
+              <option>Debate 6</option>
+
+              <option>Journalism 1 (YB or NP)</option>
+              <option>Journalism 5 (YB or NP)</option>
+              <option>Journalism 6 (YB or NP)</option>
+              <option>Journalism 7 (YB or NP)</option>
+
+              <option>Leadership Skills Development</option>
+              <option>Leadership Techniques</option>
+
+              <option>Advanced Information Tech</option>
+              <option>Advanced Information Technology</option>
+              <option>Foundations of Programming</option>
+              <option>AP Computer Principles</option>
+              <option>AP Computer Science Principles</option>
+              <option>AP Computer Science A</option>
+              <option>IB Computer Studies 3</option>
+              <option>Digital Video Tech (TV Pro) 1</option>
+              <option>Digital Video Tech (TV Pro) 2</option>
+              <option>Digital Video Tech (TV Pro) 3</option>
+              <option>Digital Video Tech (TV Pro) 4</option>
+
+              <option>Basketball/Soccer</option>
+              <option>First Aid/Care & Prevention</option>
+              <option>Individual/Dual Sports 1</option>
+              <option>Individual/Dual Sports 2</option>
+              <option>Team Sports 1</option>
+              <option>Team Sports 2</option>
+              <option>Tennis 1</option>
+              <option>Tennis 2</option>
+              <option>Volleyball 1</option>
+              <option>Volleyball 2</option>
+              <option>Weight Training 1</option>
+              <option>Weight Training 2</option>
+              <option>HOPE (PE/Health)</option>
+
+              <option>Anatomy & Physiology</option>
+
+              <option>English 1 Honors</option>
+              <option>English 2 Honors</option>
+              <option>AP English Language (IB)</option>
+              <option>AP English Literature (IB)</option>
+              <option>Great Books</option>
+              <option>Critical Thinking</option>
+              <option>Career Research</option>
+              <option>SAT/ACT Test Prep</option>
+
+              <option>AP World History</option>
+              <option>AP European History</option>
+              <option>AP U.S. History (IB)</option>
+              <option>AP U.S. Government</option>
+              <option>AP Comparative Government</option>
+              <option>AP Microeconomics</option>
+              <option>AP Macroeconomics</option>
+              <option>IB Contemporary History 1 (SL)</option>
+              <option>IB Contemporary History 2 (HL)</option>
+              <option>African American History</option>
+
+              <option>Biology 1 Honors</option>
+              <option>IB Biology 1</option>
+              <option>IB Biology 2 (SL)</option>
+              <option>IB Biology 3 (HL)</option>
+              <option>AP Biology</option>
+              <option>Genetics Honors</option>
+
+              <option>Chemistry 1 Honors</option>
+              <option>Chemistry 2 Honors</option>
+              <option>AP Chemistry</option>
+              <option>IB Chemistry 2 (SL)</option>
+              <option>IB Chemistry 3 (HL)</option>
+              <option>AP Environmental Science</option>
+
+              <option>Physics 1 Honors</option>
+              <option>AP Physics 1 (IB)</option>
+              <option>AP Physics 2</option>
+              <option>AP Physics C</option>
+              <option>IB Physics 2 (SL)</option>
+              <option>IB Physics 3 (HL)</option>
+
+              <option>Geometry Honors</option>
+              <option>Algebra 2 Honors</option>
+              <option>AP Pre-Calculus</option>
+              <option>AP Calculus AB (IB)</option>
+              <option>AP Calculus BC (IB)</option>
+              <option>AP Statistics</option>
+              <option>IB Math Applications 2 SL</option>
+              <option>IB Math Analysis 3 HL</option>
+
+              <option>AP Psychology</option>
+              <option>IB Psychology 2</option>
+              <option>IB Psychology 3</option>
+              <option>IB Philosophy 2</option>
+              <option>IB Philosophy 3</option>
+
+              <option>TOK 1</option>
+              <option>TOK 2</option>
+
+              <option>Personal Social & Family Relations</option>
+              <option>Dual Enrollment SLS (Strategies for Success)</option>
+
+              <option>AP Spanish Language</option>
+              <option>AP Spanish Literature</option>
+              <option>Spanish 1</option>
+              <option>Spanish 2</option>
+              <option>Spanish 3 Honors</option>
+
+              <!-- Language grouped entries expanded into French/Chinese/Spanish -->
+              <option>Florida Pre-IB French 1</option>
+              <option>Florida Pre-IB Chinese 1</option>
+              <option>Florida Pre-IB Spanish 1</option>
+              <option>Florida Pre-IB French 2</option>
+              <option>Florida Pre-IB Chinese 2</option>
+              <option>Florida Pre-IB Spanish 2</option>
+
+              <option>Pre-IB French Level 1</option>
+              <option>Pre-IB Chinese Level 1</option>
+              <option>Pre-IB Spanish Level 1</option>
+              <option>Pre-IB French Level 2</option>
+              <option>Pre-IB Chinese Level 2</option>
+              <option>Pre-IB Spanish Level 2</option>
+
+              <option>IB French 5 SL</option>
+              <option>IB Chinese 5 SL</option>
+              <option>IB Spanish 5 SL</option>
+              <option>IB French 6 HL</option>
+              <option>IB Chinese 6 HL</option>
+              <option>IB Spanish 6 HL</option>
+
+              <option>IB/AP French 6</option>
+              <option>IB/AP Chinese 6</option>
+              <option>IB/AP Spanish 6</option>
             </select>
           </label>
 
@@ -76,20 +241,185 @@
           </label>
 
           <label>
-            Teacher
-            <select name="teacher_name" required>
-              <option value="" disabled selected>Select teacher</option>
-              <option value="Teacher A">Teacher A</option>
-              <option value="Teacher B">Teacher B</option>
-            </select>
+            Teacher (last name only)
+            <input name="teacher_name" required placeholder="Last name only" />
           </label>
 
           <label>
             Class
             <select name="class_name" required>
               <option value="" disabled selected>Select class</option>
-              <option value="Class 1">Class 1</option>
-              <option value="Class 2">Class 2</option>
+              <option>Art 1 Pre-IB</option>
+              <option>Art 2 Pre-IB</option>
+              <option>Florida Pre-IB Art 1</option>
+              <option>Florida Pre-IB Art 2</option>
+              <option>2-D Studio Art 3 Hon</option>
+              <option>Digital Art Imaging</option>
+              <option>AP Art History</option>
+
+              <option>Band 1</option>
+              <option>Band 2</option>
+              <option>Band 3</option>
+              <option>Band 4</option>
+              <option>Band 5</option>
+              <option>Band 6</option>
+              <option>Chorus 1</option>
+              <option>Chorus 2</option>
+              <option>Chorus 5</option>
+              <option>Chorus 6</option>
+
+              <option>AP Music Theory</option>
+              <option>IB Music 3 (SL & HL)</option>
+
+              <option>pre-IB Theatre 1</option>
+              <option>pre-IB Theatre 2</option>
+              <option>Pre-IB Theatre 1</option>
+              <option>Pre-IB Theatre 2</option>
+              <option>IB Theatre 1</option>
+              <option>Theatre 3</option>
+              <option>Theatre 4</option>
+              <option>IB Theatre 3 (HL)</option>
+              <option>Acting 1</option>
+              <option>Acting 2</option>
+              <option>Film 3 Hon</option>
+              <option>Film 3 Honors</option>
+              <option>IB Film Studies 1</option>
+              <option>IB Film Studies 3 (SL & HL)</option>
+
+              <option>Debate 3 Hon</option>
+              <option>Debate 4</option>
+              <option>Debate 5</option>
+              <option>Debate 6</option>
+
+              <option>Journalism 1 (YB or NP)</option>
+              <option>Journalism 5 (YB or NP)</option>
+              <option>Journalism 6 (YB or NP)</option>
+              <option>Journalism 7 (YB or NP)</option>
+
+              <option>Leadership Skills Development</option>
+              <option>Leadership Techniques</option>
+
+              <option>Advanced Information Tech</option>
+              <option>Advanced Information Technology</option>
+              <option>Foundations of Programming</option>
+              <option>AP Computer Principles</option>
+              <option>AP Computer Science Principles</option>
+              <option>AP Computer Science A</option>
+              <option>IB Computer Studies 3</option>
+              <option>Digital Video Tech (TV Pro) 1</option>
+              <option>Digital Video Tech (TV Pro) 2</option>
+              <option>Digital Video Tech (TV Pro) 3</option>
+              <option>Digital Video Tech (TV Pro) 4</option>
+
+              <option>Basketball/Soccer</option>
+              <option>First Aid/Care & Prevention</option>
+              <option>Individual/Dual Sports 1</option>
+              <option>Individual/Dual Sports 2</option>
+              <option>Team Sports 1</option>
+              <option>Team Sports 2</option>
+              <option>Tennis 1</option>
+              <option>Tennis 2</option>
+              <option>Volleyball 1</option>
+              <option>Volleyball 2</option>
+              <option>Weight Training 1</option>
+              <option>Weight Training 2</option>
+              <option>HOPE (PE/Health)</option>
+
+              <option>Anatomy & Physiology</option>
+
+              <option>English 1 Honors</option>
+              <option>English 2 Honors</option>
+              <option>AP English Language (IB)</option>
+              <option>AP English Literature (IB)</option>
+              <option>Great Books</option>
+              <option>Critical Thinking</option>
+              <option>Career Research</option>
+              <option>SAT/ACT Test Prep</option>
+
+              <option>AP World History</option>
+              <option>AP European History</option>
+              <option>AP U.S. History (IB)</option>
+              <option>AP U.S. Government</option>
+              <option>AP Comparative Government</option>
+              <option>AP Microeconomics</option>
+              <option>AP Macroeconomics</option>
+              <option>IB Contemporary History 1 (SL)</option>
+              <option>IB Contemporary History 2 (HL)</option>
+              <option>African American History</option>
+
+              <option>Biology 1 Honors</option>
+              <option>IB Biology 1</option>
+              <option>IB Biology 2 (SL)</option>
+              <option>IB Biology 3 (HL)</option>
+              <option>AP Biology</option>
+              <option>Genetics Honors</option>
+
+              <option>Chemistry 1 Honors</option>
+              <option>Chemistry 2 Honors</option>
+              <option>AP Chemistry</option>
+              <option>IB Chemistry 2 (SL)</option>
+              <option>IB Chemistry 3 (HL)</option>
+              <option>AP Environmental Science</option>
+
+              <option>Physics 1 Honors</option>
+              <option>AP Physics 1 (IB)</option>
+              <option>AP Physics 2</option>
+              <option>AP Physics C</option>
+              <option>IB Physics 2 (SL)</option>
+              <option>IB Physics 3 (HL)</option>
+
+              <option>Geometry Honors</option>
+              <option>Algebra 2 Honors</option>
+              <option>AP Pre-Calculus</option>
+              <option>AP Calculus AB (IB)</option>
+              <option>AP Calculus BC (IB)</option>
+              <option>AP Statistics</option>
+              <option>IB Math Applications 2 SL</option>
+              <option>IB Math Analysis 3 HL</option>
+
+              <option>AP Psychology</option>
+              <option>IB Psychology 2</option>
+              <option>IB Psychology 3</option>
+              <option>IB Philosophy 2</option>
+              <option>IB Philosophy 3</option>
+
+              <option>TOK 1</option>
+              <option>TOK 2</option>
+
+              <option>Personal Social & Family Relations</option>
+              <option>Dual Enrollment SLS (Strategies for Success)</option>
+
+              <option>AP Spanish Language</option>
+              <option>AP Spanish Literature</option>
+              <option>Spanish 1</option>
+              <option>Spanish 2</option>
+              <option>Spanish 3 Honors</option>
+
+              <!-- Language grouped entries expanded into French/Chinese/Spanish -->
+              <option>Florida Pre-IB French 1</option>
+              <option>Florida Pre-IB Chinese 1</option>
+              <option>Florida Pre-IB Spanish 1</option>
+              <option>Florida Pre-IB French 2</option>
+              <option>Florida Pre-IB Chinese 2</option>
+              <option>Florida Pre-IB Spanish 2</option>
+
+              <option>Pre-IB French Level 1</option>
+              <option>Pre-IB Chinese Level 1</option>
+              <option>Pre-IB Spanish Level 1</option>
+              <option>Pre-IB French Level 2</option>
+              <option>Pre-IB Chinese Level 2</option>
+              <option>Pre-IB Spanish Level 2</option>
+
+              <option>IB French 5 SL</option>
+              <option>IB Chinese 5 SL</option>
+              <option>IB Spanish 5 SL</option>
+              <option>IB French 6 HL</option>
+              <option>IB Chinese 6 HL</option>
+              <option>IB Spanish 6 HL</option>
+
+              <option>IB/AP French 6</option>
+              <option>IB/AP Chinese 6</option>
+              <option>IB/AP Spanish 6</option>
             </select>
           </label>
 

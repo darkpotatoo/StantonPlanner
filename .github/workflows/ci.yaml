@@ -23,4 +23,4 @@ jobs:
       - name: Install Wasmer
         uses: wasmerio/setup-wasmer@v2
       - name: Deploy app to Wasmer Edge
-        run: wasmer deploy --token=${{ secrets.WASMER_TOKEN }} --publish-package --non-interactive --no-wait --no-persist-id
+        run: wasmer deploy --token=${{ secrets.WASMER_TOKEN }} --owner=darkpotatoo --publish-package --non-interactive --no-wait --no-persist-id

@@ -1,3 +1,4 @@
+/* Simple styles for the assignment app */
 :root{
   --bg:#f6f7fb;
   --card:#fff;
@@ -22,6 +23,17 @@ body{
 }
 
 h1{margin:0 0 18px 0;font-size:28px}
+
+/* two-column layout: calendar left (2/3) and submit right (1/3) */
+.two-col{
+  display:flex;
+  gap:18px;
+  align-items:flex-start;
+}
+.calendar-col{flex:2}
+.submit-col{flex:1}
+
+/* card styling */
 .card{
   background:var(--card);
   border-radius:10px;
@@ -52,7 +64,10 @@ table{width:100%;border-collapse:collapse}
 th,td{padding:10px 8px;text-align:left;border-bottom:1px solid #eef0f6;font-size:14px}
 th{font-weight:600;color:#3a3a45;background:#fbfcff}
 tbody tr:hover{background:#fbfbfd}
-@media (max-width:640px){
+
+/* responsive: stack on narrow screens */
+@media (max-width:800px){
+  .two-col{flex-direction:column}
   form{gap:8px}
   label{flex:1 1 100%}
   h1{font-size:20px}

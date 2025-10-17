@@ -10,92 +10,112 @@
   <main class="container">
     <h1>Stanton Planner — Assignments</h1>
 
-    <section class="card">
-      <h2>Submit an assignment</h2>
-      <form id="assignmentForm">
-        <label>
-          Title
-          <input name="assignment_title" required />
-        </label>
+    <div class="two-col">
+      <!-- Left: calendar / list (2/3) -->
+      <section class="card calendar-col">
+        <h2>View assignments</h2>
+        <form id="filterForm" class="filters">
+          <label>
+            Teacher
+            <select name="teacher_name">
+              <option value="">Any</option>
+              <option value="Teacher A">Teacher A</option>
+              <option value="Teacher B">Teacher B</option>
+            </select>
+          </label>
 
-        <label>
-          Teacher
-          <input name="teacher_name" required />
-        </label>
+          <label>
+            Class
+            <select name="class_name">
+              <option value="">Any</option>
+              <option value="Class 1">Class 1</option>
+              <option value="Class 2">Class 2</option>
+            </select>
+          </label>
 
-        <label>
-          Class
-          <input name="class_name" required />
-        </label>
+          <label>
+            Day type
+            <select name="day_type">
+              <option value="">Any</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+            </select>
+          </label>
 
-        <label>
-          Day type
-          <select name="day_type" required>
-            <option value="">Select</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-          </select>
-        </label>
+          <div class="form-actions">
+            <button id="filterBtn" type="button">Load</button>
+            <button id="clearFilterBtn" type="button" class="muted">Clear</button>
+          </div>
+        </form>
 
-        <label>
-          Due date
-          <input name="due_date" type="date" required />
-        </label>
+        <div id="listMessage" class="message"></div>
 
-        <div class="form-actions">
-          <button type="submit">Submit</button>
-          <button type="reset" id="resetBtn" class="muted">Reset</button>
+        <div class="table-wrap">
+          <table id="assignmentsTable">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Teacher</th>
+                <th>Class</th>
+                <th>Day</th>
+                <th>Due date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
+      </section>
 
-        <div id="formMessage" class="message"></div>
-      </form>
-    </section>
+      <!-- Right: submit form (1/3) -->
+      <section class="card submit-col">
+        <h2>Submit an assignment</h2>
+        <form id="assignmentForm">
+          <label>
+            Title
+            <input name="assignment_title" required />
+          </label>
 
-    <section class="card">
-      <h2>View assignments</h2>
-      <form id="filterForm" class="filters">
-        <label>
-          Teacher
-          <input name="teacher_name" placeholder="exact match or leave blank" />
-        </label>
+          <label>
+            Teacher
+            <select name="teacher_name" required>
+              <option value="" disabled selected>Select teacher</option>
+              <option value="Teacher A">Teacher A</option>
+              <option value="Teacher B">Teacher B</option>
+            </select>
+          </label>
 
-        <label>
-          Class
-          <input name="class_name" placeholder="exact match or leave blank" />
-        </label>
+          <label>
+            Class
+            <select name="class_name" required>
+              <option value="" disabled selected>Select class</option>
+              <option value="Class 1">Class 1</option>
+              <option value="Class 2">Class 2</option>
+            </select>
+          </label>
 
-        <label>
-          Day type
-          <select name="day_type">
-            <option value="">Any</option>
-            <option value="A">A</option>
-            <option value="B">B</option>
-          </select>
-        </label>
+          <label>
+            Day type
+            <select name="day_type" required>
+              <option value="">Select</option>
+              <option value="A">A</option>
+              <option value="B">B</option>
+            </select>
+          </label>
 
-        <div class="form-actions">
-          <button id="filterBtn" type="button">Load</button>
-          <button id="clearFilterBtn" type="button" class="muted">Clear</button>
-        </div>
-      </form>
+          <label>
+            Due date
+            <input name="due_date" type="date" required />
+          </label>
 
-      <div id="listMessage" class="message"></div>
+          <div class="form-actions">
+            <button type="submit">Submit</button>
+            <button type="reset" id="resetBtn" class="muted">Reset</button>
+          </div>
 
-      <div class="table-wrap">
-        <table id="assignmentsTable">
-          <thead>
-            <tr>
-              <th>Title</th>
-              <th>Teacher</th>
-              <th>Class</th>
-              <th>Day</th>
-              <th>Due date</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
-      </div>
-    </section>
+          <div id="formMessage" class="message"></div>
+        </form>
+      </section>
+    </div>
   </main>
 
   <script src="script.js" defer></script>

@@ -1,4 +1,3 @@
-/* Simple styles for the assignment app */
 :root{
   --bg:#f6f7fb;
   --card:#fff;
@@ -65,7 +64,7 @@ th,td{padding:10px 8px;text-align:left;border-bottom:1px solid #eef0f6;font-size
 th{font-weight:600;color:#3a3a45;background:#fbfcff}
 tbody tr:hover{background:#fbfbfd}
 
-/* responsive: stack on narrow screens */
+/* stack on narrow screens */
 @media (max-width:800px){
   .two-col{flex-direction:column}
   form{gap:8px}

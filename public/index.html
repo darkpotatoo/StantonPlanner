@@ -17,7 +17,7 @@
         <form id="filterForm" class="filters">
           <label>
             Teacher (last name only)
-            <input name="teacher_name" placeholder="Last name only" />
+            <input name="teacher_name" placeholder="Last name only" oninput="this.value = this.value.toUpperCase()" />
           </label>
 
           <label>
@@ -242,7 +242,7 @@
 
           <label>
             Teacher (last name only)
-            <input name="teacher_name" required placeholder="Last name only" />
+            <input name="teacher_name" placeholder="Last name only" oninput="this.value = this.value.toUpperCase()" />
           </label>
 
           <label>

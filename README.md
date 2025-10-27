@@ -1,28 +1,23 @@
-A static-website starter template using [Static Web Server](https://github.com/static-web-server/static-web-server).
+# Stanton Community Planner
+The Stanton Community planner allows users to submit assignments for anyone else to view. 
+The goal is to make use of some people's good habits and allow everyone else to benefit from them!
 
-> You can follow the full tutorial from [here](https://docs.wasmer.io/edge/tutorials/cdn)
+##### To submit an assignment you only need:
+- Assignment title
+- A/B day
+- Due Date
+- Teacher
+- Class
+It takes less than 30 seconds!
 
-## Usage
+##### To view upcoming assignments you only need to filter by:
+- A/B day
+- Teacher
+- Class
+It's as simple as that!
 
-All the static files will be served from the `public` folder, and the static webserver will be configured using the `config.toml` file.
-
-You can run the static-website template easily using Wasmer (check out the [install guide](https://docs.wasmer.io/install)):
-
-```bash
-wasmer run . --net
-```
-
-Open [http://localhost:8080](http://localhost:8080) with your browser
-to see the static website.
-
-## Deploy on Wasmer Edge
-
-The easiest way to serve your public assets is to use the [Wasmer Edge](https://wasmer.io/products/edge) as your CDN.
-
-Live example: https://static-website.wasmer.app/
-
-Run this commmand to deploy to Wasmer Edge:
-
-```bash
-wasmer deploy
-```
+##### Example usage:
+*Submitting assignments:*
+![Example of usage](example1.png)
+*Viewing assignments:*
+![Example of usage](example2.png)

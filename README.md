@@ -1,3 +1,4 @@
+*there is an exposed api key, the database is very much down so it cant even be used*
 # Stanton Community Planner
 The Stanton Community planner allows users to submit assignments for anyone else to view. 
 The goal is to make use of some people's good habits and allow everyone else to benefit from them!
